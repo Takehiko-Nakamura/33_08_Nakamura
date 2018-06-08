@@ -139,10 +139,14 @@ if($status==false){
             <tr>
                 <th>志望動機</th>
                 <td>
-                <label><input type="radio" name="motive" value="チーズで起業をしたい" required>チーズで起業をしたい</label><br>
-                <label><input type="radio" name="motive" value="チーズ系企業に就職・転職したい" required>チーズ系企業に就職・転職したい</label><br>
-                <label><input type="radio" name="motive" value="チーズと関わる仕事をしており、仕事に生かしたい" required>チーズと関わる仕事をしており、仕事に生かしたい</label><br>
-                <label><input type="radio" name="motive" value="チーズの教養を身につけたい" required>チーズの教養を身につけたい</label><br>
+                <label><input type="radio" name="motive" value="チーズで起業をしたい" 
+                <?php if($view["motive"]=="チーズで起業をしたい"){echo 'checked';} ?> required>チーズで起業をしたい</label><br>
+                <label><input type="radio" name="motive" value="チーズ系企業に就職・転職したい" 
+                <?php if($view["motive"]=="チーズ系企業に就職・転職したい"){echo 'checked';} ?> required>チーズ系企業に就職・転職したい</label><br>
+                <label><input type="radio" name="motive" value="チーズと関わる仕事をしており、仕事に生かしたい"  
+                <?php if($view["motive"]=="チーズと関わる仕事をしており、仕事に生かしたい"){echo 'checked';} ?> required>チーズと関わる仕事をしており、仕事に生かしたい</label><br>
+                <label><input type="radio" name="motive" value="チーズの教養を身につけたい" 
+                <?php if($view["motive"]=="チーズの教養を身につけたい"){echo 'checked';} ?> required>チーズの教養を身につけたい</label><br>
                 </td>
             </tr>
             <tr>
